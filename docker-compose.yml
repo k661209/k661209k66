@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  app:
+    build: .
+    restart: always
+    volumes:
+      - ./data/crontab:/app/crontab
+      - ./data/config:/app/config
+      - ./data/metadata:/app/metadata
